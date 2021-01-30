@@ -2,10 +2,9 @@
 function age(){
     var h1=document.createElement('h1');
     
-    var birthYear=prompt("Birth Year ?");
-    var today = new Date(); 
-    var age = today.getFullYear()-birthYear;
-    var textAnswer = document.createTextNode("Age is " + age)
+    var birthYear=prompt("Age ?"); 
+    var age = birthYear*365;
+    var textAnswer = document.createTextNode("Age in days is " + age)
 
     h1.setAttribute('id','age')
     h1.style.border = "1px solid black"
